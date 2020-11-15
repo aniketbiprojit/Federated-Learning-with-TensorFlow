@@ -1,0 +1,8 @@
+__pycache__
+.vscode
+node_modules
+keras_models
+tfjs
+tfjs-models
+train-*
+*.h5
