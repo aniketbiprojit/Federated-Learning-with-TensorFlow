@@ -7,7 +7,9 @@ Set up the environment with requirements.txt(pip) or environment.yml(conda)
 Use npm or yarn to install node dependencies.
 
 Download dataset and extract:
+
 http://yann.lecun.com/exdb/mnist/train-images-idx3-ubyte.gz
+
 http://yann.lecun.com/exdb/mnist/train-labels-idx1-ubyte.gz
 
 Run in following order.
