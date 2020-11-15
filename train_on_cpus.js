@@ -48,8 +48,7 @@ if (cluster.isMaster) {
 	console.log(`Worker ${process.pid} started:`)
 
 	const run = require('./model')
-    run(X_tensor, y_tensor, index).then(history=>{
-        // console.log(history)
-    })
-    
+	run(X_tensor, y_tensor, index).then((history) => {
+		process.exit()
+	})
 }

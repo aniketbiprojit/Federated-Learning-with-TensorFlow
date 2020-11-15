@@ -28,9 +28,9 @@ for client_model in client_models:
 updated_weights = [tf.reduce_mean(weights[0],0),tf.reduce_mean(weights[1],0)]
 updated_weights_with_server = [tf.reduce_mean([updated_weights[0],model.weights[0]],0),tf.reduce_mean([updated_weights[1],model.weights[1]],0)]
 
-# model.weights = updated_weights_with_server
-
-# print(model.summary(),len(model.weights))
+print('Weights Averaged. Saving model.')
+print(model.summary(),len(model.weights), model.weights[1].shape)
+print(len(weights[0]),updated_weights[0].shape)
 model.layers[0].set_weights(updated_weights_with_server)
 
 model.save('./model.h5')
