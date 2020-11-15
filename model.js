@@ -3,9 +3,7 @@ const tf = require('@tensorflow/tfjs-node')
 const fs = require('fs')
 
 const load_model = async () => {
-	const model = await tf.loadLayersModel(
-		'file:///home/aniket/Work/federated/server/tfjs/model.json'
-	)
+	const model = await tf.loadLayersModel(`file:///${__dirname}/tfjs/model.json`)
 
 	model.weights.forEach((w) => {
 		console.log(w.name, w.shape)
