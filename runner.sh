@@ -1,3 +1,4 @@
+#! bin/bash
 python create_model.py
 ./to_tfjs.sh
 node train_on_cpus.js

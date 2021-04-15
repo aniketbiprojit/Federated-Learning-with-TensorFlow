@@ -24,6 +24,7 @@ function onBatchEnd(batch, logs, model) {
 	history.push(logs.acc)
 	// process.exit()
 	// console.log('Batch', batch)
+	//
 }
 
 const run = async (X_tensor, y_tensor, revision) => {
@@ -34,17 +35,14 @@ const run = async (X_tensor, y_tensor, revision) => {
 			epochs: 10,
 			batchSize: 32,
 			callbacks: {
-				onBatchEnd: (batch, logs, model) =>
-					onBatchEnd(batch, logs, model),
+				onBatchEnd: (batch, logs, model) => onBatchEnd(batch, logs, model),
 			},
 		})
 		.then(async () => {
 			if (!fs.existsSync('tfjs-models')) {
 				fs.mkdirSync('tfjs-models')
 			}
-			await model.save(
-				`file:///${__dirname}/tfjs-models/tfjs-${revision}`
-			)
+			await model.save(`file:///${__dirname}/tfjs-models/tfjs-${revision}`)
 			console.log(history[0], history[history.length - 1])
 			return history
 		})

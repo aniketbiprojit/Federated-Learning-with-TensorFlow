@@ -1,7 +1,7 @@
 // Code from https://stackoverflow.com/questions/25024179/reading-mnist-dataset-with-javascript-node-js
 // Author https://stackoverflow.com/users/254532/lilleman
 // Download files from http://yann.lecun.com/exdb/mnist/
-
+//
 const fs = require('fs')
 const dataFileBuffer = fs.readFileSync(__dirname + '/train-images-idx3-ubyte')
 const labelFileBuffer = fs.readFileSync(__dirname + '/train-labels-idx1-ubyte')

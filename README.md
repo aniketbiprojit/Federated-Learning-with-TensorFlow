@@ -13,6 +13,7 @@ http://yann.lecun.com/exdb/mnist/train-images-idx3-ubyte.gz
 http://yann.lecun.com/exdb/mnist/train-labels-idx1-ubyte.gz
 
 Run in following order.
+
 ```
 python create_model.py
 ./to_tfjs.sh

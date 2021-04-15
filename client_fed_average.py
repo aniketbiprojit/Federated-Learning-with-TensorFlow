@@ -9,7 +9,7 @@ from tensorflow_federated.python.tensorflow_libs import tensor_utils
 from tensorflow_federated.python.learning.framework import optimizer_utils
 
 import collections
-
+#
 model = keras.models.load_model('./model.h5')
 # model.compile('SGD')
 
