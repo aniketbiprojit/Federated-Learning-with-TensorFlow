@@ -14,6 +14,15 @@ http://yann.lecun.com/exdb/mnist/train-labels-idx1-ubyte.gz
 
 Run in following order.
 
+```
+python create_model.py
+./to_tfjs.sh
+node train_on_cpus.js
+node convert_tfjs_to_keras.js
+python client_fed_average.py
+```
+
+--------------- TEAM ---------------
 
 | Name             | Enrollment id |
 | ---------------- | ------------- |
@@ -22,12 +31,3 @@ Run in following order.
 | Aaryan Kapur     | E18CSE004     |
 | Abhinav Robinson | E18CSE006     |
 | Ashok Kumar      | E18CSE029     |
-
-
-```
-python create_model.py
-./to_tfjs.sh
-node train_on_cpus.js
-node convert_tfjs_to_keras.js
-python client_fed_average.py
-```
