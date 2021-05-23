@@ -4,7 +4,7 @@ node_modules
 keras_models
 tfjs
 tfjs-models
-train-*
+# train-*
 *.h5
 env
 
