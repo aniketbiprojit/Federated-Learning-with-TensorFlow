@@ -14,6 +14,16 @@ http://yann.lecun.com/exdb/mnist/train-labels-idx1-ubyte.gz
 
 Run in following order.
 
+
+| Name             | Enrollment id |
+| ---------------- | ------------- |
+| Jai Chhabra      | E18CSE071     |
+| Aniket Biprojit  | E18CSE015     |
+| Aaryan Kapur     | E18CSE004     |
+| Abhinav Robinson | E18CSE006     |
+| Ashok Kumar      | E18CSE029     |
+
+
 ```
 python create_model.py
 ./to_tfjs.sh
