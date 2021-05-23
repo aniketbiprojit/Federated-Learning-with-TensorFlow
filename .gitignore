@@ -6,3 +6,4 @@ tfjs
 tfjs-models
 train-*
 *.h5
+env
